@@ -1,0 +1,109 @@
+body {
+    margin: 0;
+    background: linear-gradient(rgb(46, 7, 7), black);
+    color: #ffffff;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background: linear-gradient(#d77d7d, rgb(118, 31, 31)); 
+    border-bottom: 1px solid #282828; /* Light border for separation */
+}
+
+.header-content {
+    display: flex;
+}
+
+.header-content img{
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgb(96, 21, 21);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-content img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+    box-shadow: 0 2px 25px rgba(170, 221, 141, 0.7);
+}
+
+.header-text {
+    margin-left: 20px; /* Add left margin to create space from the image */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 12px; /* Title size */
+    font-weight: bolder; /* Bold title */
+}
+
+.header-text h2 {
+    margin: 5px 0 0 0; /* Margin adjustments */
+    font-size: 35px; /* Subtitle size */
+    color: #ffffff; /* Slightly lighter color for subtitle */
+}
+
+.header-text h3 {
+    font-size: 13px; /* Subtitle size */
+    color: #ffffff; /* Slightly lighter color for subtitle */
+}
+
+.header-text h3 img{
+    height:auto;
+    width: 30px;
+    border-radius: 20px;
+    margin-right: 10px;
+
+}
+
+.about-song, .song-lyrics, .song-play {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
+    max-width: 1000px;
+    justify-content: center;
+    border-radius: 8px; /* Rounded corners */
+    margin: 20px auto; /* Margin for sections */
+    padding: 20px; /* Inner padding */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Shadow for depth */
+}
+
+.about-song h3 {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 0 10px 0; /* Margin adjustment */
+    border-bottom: 1px solid #282828; /* Border under section title */
+    padding-bottom: 5px; /* Space below title */
+}
+
+.song-lyrics h3 {
+    font-size: 25px;
+    text-align: center;
+}
+
+p {
+    margin: 0;
+    text-align: center;
+    font-size: 12px; /* Font size for lyrics and content */
+    line-height: 1.6; /* Line height for readability */
+}
+
+.song-play {
+    display: flex;
+    justify-content: center; /* Center the play button */
+    align-items: center; /* Center vertically */
+}
+
+.playbutton-container img {
+    width: 50px; /* Button size */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Pointer on hover */
+    transition: transform 0.2s; /* Animation on hover */
+}
+
+.playbutton-container img:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
