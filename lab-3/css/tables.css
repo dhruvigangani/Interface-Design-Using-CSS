@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+html {
+    font: 100%/1.2;
+}
+table {
+    border-collapse: collapse;
+    caption-side: top;
+    table-layout: auto;
+    width: 100%;
+}
+
+td, th {
+    padding: 1em;
+    border-top: 1px solid #c1bbbb; /* Border only on the top */
+    border-bottom: 1px solid #cdbdbd; /* Border only on the bottom */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+}
+th {
+    background: rgb(255, 255, 255);
+    border-top: 1px solid #e6dada; /* Keep for top border on header */
+    border-bottom: 1px solid #cac5c5; /* Keep for bottom border on header */
+    border-left: none; /* Remove left border */
+    border-right: none; /* Remove right border */
+}
+tbody th {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgba(233, 224, 224, 0.25);
+}
+
+tfoot td {
+    font-size: 60%;
+}
+caption {
+    font-size: 120%;
+    text-align: left;
+}
